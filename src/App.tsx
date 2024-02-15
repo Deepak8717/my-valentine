@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import "./App.css";
 export default function Page() {
   const [noCount, setNoCount] = useState(0);
   const [yesPressed, setYesPressed] = useState(false);
@@ -38,7 +38,9 @@ export default function Page() {
       {yesPressed ? (
         <>
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-4xl font-bold">WOOOOOO!!! I love you pookie!! ;))</div>
+          <div className="my-4 text-4xl font-bold">
+            WOOOOOO!!! I love you pookie!! ;))
+          </div>
         </>
       ) : (
         <>
@@ -46,7 +48,12 @@ export default function Page() {
             className="h-[200px]"
             src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
           />
-          <h1 className="my-4 text-4xl">Will you be my Valentine?</h1>
+          <h2 className="my-4 text-5xl text-center love-font text-red-500">
+            Reema
+          </h2>
+          <h1 className="my-4 text-5xl text-center max-w-[360px] love-font">
+            Will you be my Valentine Sweetheart ?
+          </h1>
           <div className="flex items-center">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
